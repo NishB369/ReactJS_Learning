@@ -1,0 +1,61 @@
+1. Created an HTML file
+    -> created a div with a heading - "Hello World" using HTML syntax
+
+2. Created a JS script
+    -> created a div with a heading - "Hello World" using JS syntax
+    -> browser runs the JS code with a JS engine that controls the rendering engine depending on DOM strucutre and its manipulations defined in the code.
+
+    -> browser doesn't know anything about ReactJS, so we have to provide it an environment to be able to execute and render our ReactJS syntax based code logic.
+
+3. Getting react to our project
+    -> Way 01. CDN
+
+        -> it is a place where our required things is available and we are pulling it from the nearest available server for speed, scalabilty etc benefites.
+
+        -> what is CDN?
+            -> A CDN, or Content Delivery Network, is a system of distributed servers that deliver web content to users based on their geographic location. Here’s a brief overview of what a CDN does and its benefits:
+            
+            What is a CDN?
+                Definition: A CDN is a network of servers located in various geographical locations that work together to deliver content (like images, videos, stylesheets, scripts, etc.) to users more efficiently.
+
+                How it Works: When a user requests content from a website, the CDN redirects that request to the nearest server in its network. This reduces latency and speeds up the loading time of the content.
+                
+                Benefits:
+                    Faster Load Times: By serving content from a location closer to the user, CDNs can significantly reduce the time it takes for a webpage to load.
+
+                    Reduced Bandwidth Costs: CDNs can help reduce the amount of data that needs to be transferred from the origin server, which can lower hosting costs.
+
+                    Improved Availability and Redundancy: If one server goes down, the CDN can reroute requests to another server, ensuring that the content remains available.
+
+                    Scalability: CDNs can handle spikes in traffic more effectively than a single server, making them ideal for high-traffic websites.
+
+                Common Uses of CDNs
+                    Hosting libraries and frameworks like Bootstrap, jQuery, and GSAP.
+
+                Serving images, videos, and other media files.
+
+                Distributing static assets for web applications.
+
+            In summary, a CDN is a powerful tool for improving the performance and reliability of web applications by distributing content across multiple servers.
+
+        -> what is crossorigin?
+            -> smjh nhi aya
+
+        -> clicked the link
+            -> found large js code file
+            -> react is a js library, react is at the end of the day is js code!
+            -> code written by Facebook!
+
+        -> upon injecting CDN   
+            -> we have got React
+
+        -> we have got 2 files  
+            -> react.development.js
+                • core of react
+            -> react-dom.development.js
+                • react lib used to manipulate DOM (bridge to usecase)
+
+            -> why 2 files?
+                -> react doesn't only works on browsers
+                -> mobile - react_native
+                -> 3d - react fiber
