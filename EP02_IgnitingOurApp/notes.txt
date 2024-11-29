@@ -1,0 +1,26 @@
+-> npm is not "node package manager" as its abbreviations, but yes that's the work it does.
+
+-> package.json is a configuration for npm
+    -> package.json is a file used in Node.js projects to manage project dependencies, scripts, and metadata. It serves as a manifest for the project, detailing the packages that the project depends on, the version of those packages, and other important information such as the project's name, version, and author.
+
+    Link to npm:
+    
+        npm (Node Package Manager): npm is a package manager for JavaScript and is the default package manager for Node.js. It allows developers to install, share, and manage dependencies in their projects.
+
+        Role of package.json: When you run commands like npm install, npm looks at the package.json file to determine which packages to install. It also uses this file to manage the versions of the packages and their dependencies.
+    
+    In summary, package.json is essential for npm to function correctly, as it provides the necessary information about the project and its dependencies.
+
+-> the most imp package in our project is - "bundler"
+    -> webpack, parcel, vite
+    -> do things like compression, minifying etc, to make the code production ready
+
+-> 2 types of dependencies
+    -> dev dependencies : development phase
+    -> normal dependencies : needed in production also
+
+    {
+        "devDependencies": {"parcel": "^2.13.2"}
+    }
+
+    -> di

@@ -1,0 +1,21 @@
+{
+  "name": "ep02_ignitingourapp",
+  "version": "1.0.0",
+  "description": "lecture02",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.13.2",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "browserslist":[
+    "last 2 Chrome version"
+  ]
+}
