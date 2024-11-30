@@ -31,6 +31,10 @@ ul {
   padding: 10px 100px;
 }
 
+.logo-ctr{
+  cursor: pointer;
+}
+
 .search-bar {
   height: 10%;
   width: 100%;
@@ -116,11 +120,23 @@ ul {
   margin-top: 2%;
 }
 
+.ctr{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  /* border: 1px solid red; */
+}
+
 .food-desc {
   font-size: 14px;
   text-align: justify;
-  width: 80%;
+  /* width: 80%; */
   /* border: 1px solid red; */
+}
+
+.food-rating{
+  font-weight: bold;
 }
 
 .btn-ctr {
