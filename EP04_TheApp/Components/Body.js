@@ -1,9 +1,9 @@
 import CardContainer from "./CardContainer";
 
-const Body = ({ listOfRest, setListOfRest}) => {
+const Body = ({ listOfRest, setListOfRest, filteredListOfRest, setFilteredListOfRest}) => {
   return (
     <>
-      <CardContainer listOfRest={listOfRest} setListOfRest={setListOfRest}/>
+      <CardContainer listOfRest={listOfRest} setListOfRest={setListOfRest} filteredListOfRest={filteredListOfRest} setFilteredListOfRest={setFilteredListOfRest}/>
     </>
   );
 };

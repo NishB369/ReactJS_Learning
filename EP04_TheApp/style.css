@@ -46,13 +46,13 @@ ul {
   margin-top: 1%;
 }
 
-.search-bar textarea {
+.search-bar input {
   width: 20%;
   height: 100%;
-  padding: 0 10px;
-  padding-top: 10px;
+  padding: 8px;
+  /* padding-top: 10px; */
   font-family: Arial, Helvetica, sans-serif;
-  resize: none;
+  /* resize: none; */
 }
 
 .search-bar textarea:focus {

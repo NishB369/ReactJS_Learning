@@ -2,10 +2,11 @@ import Card from "./Card";
 import ShimCard from "../Shimmer Components/Card";
 import { useEffect } from "react";
 
-const CardContainer = ({ listOfRest, setListOfRest }) => {
+const CardContainer = ({ listOfRest, setListOfRest, filteredListOfRest, setFilteredListOfRest }) => {
   useEffect(() => {
     fetchData();
   }, []);
+  
 
   const fetchData = async () => {
     const data = await fetch(
@@ -17,6 +18,7 @@ const CardContainer = ({ listOfRest, setListOfRest }) => {
     // console.log("isko utha");
 
     setListOfRest(json?.data?.cards.slice(3));
+    setFilteredListOfRest(json?.data?.cards.slice(3))    
   };
 
   if (listOfRest.length === 0) {
@@ -41,7 +43,7 @@ const CardContainer = ({ listOfRest, setListOfRest }) => {
 
   return (
     <div className="card-container">
-      {listOfRest.map((data, index) => (
+      {filteredListOfRest.map((data, index) => (
         <Card key={index} resData={data} />
       ))}
     </div>

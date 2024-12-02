@@ -3,11 +3,12 @@ import ReactDOM from "react-dom/client";
 import Header from "./Components/Header";
 import SearchBar from "./Components/SearchBar";
 import Body from "./Components/Body";
-import { dataList } from "./Utilities/mockData";
+// import { dataList } from "./Utilities/mockData";
 import { useState, useEffect } from "react";
 
 const AppLayout = () => {
   const [listOfRest, setListOfRest] = useState([]);
+  const [filteredListOfRest, setFilteredListOfRest] = useState([])
 
   /*
     UI Rendered
@@ -20,8 +21,8 @@ const AppLayout = () => {
   return (
     <div className="app">
       <Header />
-      <SearchBar setListOfRest={setListOfRest} />
-      <Body listOfRest={listOfRest} setListOfRest={setListOfRest} />
+      <SearchBar listOfRest={listOfRest} setListOfRest={setListOfRest} filteredListOfRest={filteredListOfRest} setFilteredListOfRest={setFilteredListOfRest} />
+      <Body listOfRest={listOfRest} setListOfRest={setListOfRest} filteredListOfRest={filteredListOfRest} setFilteredListOfRest={setFilteredListOfRest}/>
     </div>
   );
 };
