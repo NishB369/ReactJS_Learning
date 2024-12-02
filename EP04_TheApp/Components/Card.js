@@ -2,7 +2,7 @@
 
 const Card = (props) => {
     const {resData} = props
-    const {cloudinaryImageId, name, costForTwo, avgRating} = resData.info
+    const {cloudinaryImageId, name, costForTwo, avgRating} = resData.card.card.info
   return (
     <div className="card">
       <img

@@ -8,7 +8,7 @@ const SearchBar = ({ setListOfRest }) => {
       <button
         style={{ backgroundColor: "#252525", color: "white" }}
         onClick={() => {
-          let filteredList = dataList.filter((res) => res.info.avgRating > 4);
+          let filteredList = dataList.filter((res) => res.card.card.info.avgRating > 4);
           setListOfRest(filteredList);
         }}
       >
@@ -17,7 +17,7 @@ const SearchBar = ({ setListOfRest }) => {
       <button
         style={{ backgroundColor: "#252525", color: "white" }}
         onClick={() => {
-          let filteredList = dataList.filter((res) => res.info.avgRating < 4);
+          let filteredList = dataList.filter((res) => res.card.card.info.avgRating < 4);
           setListOfRest(filteredList);
         }}
       >

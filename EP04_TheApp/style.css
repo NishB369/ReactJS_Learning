@@ -97,6 +97,12 @@ ul {
   margin-bottom: 2%;
 }
 
+.shim-card{
+  background-color: rgba(62, 62, 62, 0.525);
+  border: 1px solid black;
+  opacity: 0.75;
+}
+
 .card:hover {
   scale: 1.04;
   box-shadow: 1px 1px 10px rgba(62, 62, 62, 0.525);
@@ -109,6 +115,10 @@ ul {
   object-fit: cover;
   object-position: center;
   border-radius: 8px;
+}
+
+.shim-food-img{
+  background-color: white;
 }
 
 .food-title {
@@ -126,6 +136,12 @@ ul {
   justify-content: space-between;
   width: 80%;
   /* border: 1px solid red; */
+}
+
+.shim-ctr{
+  background-color: white;
+  height: 16%;
+  border-radius: 5px;
 }
 
 .food-desc {
@@ -158,6 +174,13 @@ ul {
   border-radius: 2px;
 }
 
+.shim-btn{
+  background-color: white;
+  height: 90%;
+  width: 40%;
+  padding: 4%;
+}
+
 .btn:hover {
   cursor: pointer;
   scale: 1.04;
@@ -176,6 +199,38 @@ ul {
   /* column-gap: 10%; */
 }
 
+.video-ctr{
+  height: 80vh;
+  width: 100vw;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.preloader{
+  height: 200px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: orange;
+}
 
+@keyframes rotate {
+  from {
+    /* transform: rotate(0deg); */
+    scale: 1.5;
+  }
+  to {
+    /* transform: rotate(360deg); */
+    scale: 3;
+  }
+}
+
+.preloader {
+  animation: rotate 1s linear infinite;
+}
 
