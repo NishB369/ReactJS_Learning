@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    height: 100%;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#root{
+    height: 100%;
+    width: 100%;
+    background-color: #FDFDFD;
+}
+
+.header{
+    height: 12%;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 10px 10px rgba(128, 128, 128, 0.16);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo img{
+    height: 50px;
+    width: 50px;
+    border-radius: 8px;
+}
+
+.address{
+    font-size: 14px;
+    color: rgb(105, 105, 105);
+}
+
+.nav-bar{
+    height: 75%;
+    width: 50%;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-item{
+    height: 80%;
+    width: 16%;
+    /* border: 1px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8%;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(32, 32, 32);
+    cursor: pointer;
+}
+
+.title-ctr{
+    /* height: 10%; */
+    /* border: 1px solid red; */
+    padding: 10px 50px;
+    margin-top: 28px;
+}
+
+.title-ctr h1{
+    font-size: 40px;
+    margin-bottom: 2px;
+}
+
+.title-ctr h4{
+    font-size: 18px;
+    font-weight: 300;
+    color: rgb(105, 105, 105);
+}
+
+.main-bar{
+    height: 10%;
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    padding-left: 50px;
+    gap: 2%;
+}
+
+.search-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.search-bar input{
+    padding: 10px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: none;
+    border-right: 1px solid black;
+}
+
+.search-bar button{
+    padding: 10px;
+    cursor: pointer;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: none;
+}
+
+.filter-bar{
+    /* border: 1px solid red; */
+    width: 50%;
+    /* padding: 7.5px 0px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 60%;
+}
+
+.filter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+    height: 100%;
+    padding: 0 2%;
+    /* background-color: rgba(244, 243, 243, 0.505); */
+    border-radius: 5px;
+    border: 1px solid rgb(105, 105, 105);
+    font-size: 14px;
+    cursor: pointer;
+    width: fit-content;
+    transition: ease-in-out 0.2s;
+}
+
+.filter:hover{
+    box-shadow: 1px 1px 5px rgba(188, 187, 187, 0.24);
+}
+
+h3{
+    font-weight: bold;
+    padding-left: 50px;
+    margin-top: 16px;
+    font-size: 20px;
+}
+
+.cards-ctr{
+    /* border: 1px solid red; */
+    /* width: 100%; */
+    /* height: 100vh; */
+    padding: 10px 50px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card{
+    height: 375px;
+    width: 275px;
+    /* background-color: rgba(223, 220, 220, 0.571); */
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 2%;
+    transition: ease-in-out 0.4s;
+}
+
+.card img{
+    background-color: rgba(161, 161, 161, 0.322);
+    width: 100%;
+    height: 55%;
+    border-radius: 10px;
+    box-shadow: 0px 5px 4px rgba(188, 187, 187, 0.2);
+    margin-bottom: 3%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card h1{
+    font-size: 20px;
+    padding: 5px 16px;
+    font-weight: 700;
+}
+
+.rating-ctr{
+    padding: 0px 16px;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2%;
+}
+
+.rating-ctr div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rating-star{
+    background-color: green;
+    border-radius: 50%;
+    font-size: 10px;
+    padding: 4px;
+    color:  white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card p{
+    padding: 0px 16px;
+    margin-top: 8px;
+    color: rgb(105, 105, 105);
+}
+
+.card:hover{
+    scale: 0.95;
+    cursor: pointer;
+}
