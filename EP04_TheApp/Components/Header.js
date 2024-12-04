@@ -6,7 +6,7 @@ let liStyle = {
 const Header = () => {
   return (
     <div className="header">
-      <div className="logo-ctr" onClick={() => window.location.reload()}>
+      <div className="logo-ctr" onClick={() => (window.location.href = '/')}>
         <img
           width={"40px"}
           height={"40px"}
@@ -22,9 +22,9 @@ const Header = () => {
             justifyContent: "center",
           }}
         >
-          <li style={liStyle}>Home</li>
-          <li style={liStyle}>About</li>
-          <li style={liStyle}>Contact</li>
+          <li style={liStyle} onClick={() => (window.location.href = '/')}>Home</li>
+          <li style={liStyle} onClick={() => (window.location.href = '/About')}>About</li>
+          <li style={liStyle} onClick={() => (window.location.href = '/Contact')}>Contact</li>
           <li style={liStyle}>Cart</li>
         </ul>
       </div>

@@ -1,9 +1,21 @@
 import CardContainer from "./CardContainer";
+import { useOutletContext } from "react-router";
 
-const Body = ({ listOfRest, setListOfRest, filteredListOfRest, setFilteredListOfRest}) => {
+const Body = () => {
+  const {
+    listOfRest,
+    setListOfRest,
+    filteredListOfRest,
+    setFilteredListOfRest,
+  } = useOutletContext();
   return (
     <>
-      <CardContainer listOfRest={listOfRest} setListOfRest={setListOfRest} filteredListOfRest={filteredListOfRest} setFilteredListOfRest={setFilteredListOfRest}/>
+      <CardContainer
+        listOfRest={listOfRest}
+        setListOfRest={setListOfRest}
+        filteredListOfRest={filteredListOfRest}
+        setFilteredListOfRest={setFilteredListOfRest}
+      />
     </>
   );
 };

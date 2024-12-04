@@ -13,6 +13,7 @@ html {
 body {
   background-color: rgb(255, 230, 183);
   font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
 }
 
 ul {
@@ -31,7 +32,7 @@ ul {
   padding: 10px 100px;
 }
 
-.logo-ctr{
+.logo-ctr {
   cursor: pointer;
 }
 
@@ -97,7 +98,7 @@ ul {
   margin-bottom: 2%;
 }
 
-.shim-card{
+.shim-card {
   background-color: rgba(62, 62, 62, 0.525);
   border: 1px solid black;
   opacity: 0.75;
@@ -117,7 +118,7 @@ ul {
   border-radius: 8px;
 }
 
-.shim-food-img{
+.shim-food-img {
   background-color: white;
 }
 
@@ -130,7 +131,7 @@ ul {
   margin-top: 2%;
 }
 
-.ctr{
+.ctr {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -138,7 +139,7 @@ ul {
   /* border: 1px solid red; */
 }
 
-.shim-ctr{
+.shim-ctr {
   background-color: white;
   height: 16%;
   border-radius: 5px;
@@ -151,7 +152,7 @@ ul {
   /* border: 1px solid red; */
 }
 
-.food-rating{
+.food-rating {
   font-weight: bold;
 }
 
@@ -174,7 +175,7 @@ ul {
   border-radius: 2px;
 }
 
-.shim-btn{
+.shim-btn {
   background-color: white;
   height: 90%;
   width: 40%;
@@ -199,7 +200,7 @@ ul {
   /* column-gap: 10%; */
 }
 
-.video-ctr{
+.video-ctr {
   height: 80vh;
   width: 100vw;
   /* background-color: red; */
@@ -208,7 +209,7 @@ ul {
   justify-content: center;
 }
 
-.preloader{
+.preloader {
   height: 200px;
   width: 200px;
   display: flex;
@@ -232,5 +233,71 @@ ul {
 
 .preloader {
   animation: rotate 1s linear infinite;
+}
+
+.about-page {
+  height: 80vh;
+  width: 100vw;
+  /* background-color: rgb(255, 194, 81); */
+  /* color: white; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* filter: blur(5px); */
+}
+
+
+.about-page h1 {
+  width: 30%;
+  text-align: center;
+  scale: 1.2;
+  font-style: italic;
+}
+
+.contact{
+  height: 80vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* color: white; */
+  font-size: 50px;
+  /* background-color: rgb(255, 194, 81); */
+  gap: 4%;
+}
+
+.contact span{
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
+}
+
+.contact span:hover{
+  scale: 1.2;
+  color: white;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.148);
+}
+
+.error-comp{
+  height: 100vh;
+  width: 100vw;
+  /* background-color: rgb(255, 194, 81); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.error-comp div{
+  height: 50vh;
+  width: 50vw;
+  background-image: url(./Utilities/errorImg.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 30px;
 }
 
