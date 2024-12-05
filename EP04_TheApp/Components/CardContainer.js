@@ -18,7 +18,8 @@ const CardContainer = ({ listOfRest, setListOfRest, filteredListOfRest, setFilte
     // console.log("isko utha");
 
     setListOfRest(json?.data?.cards.slice(3));
-    setFilteredListOfRest(json?.data?.cards.slice(3))    
+    setFilteredListOfRest(json?.data?.cards.slice(3))  
+      
   };
 
   if (listOfRest.length === 0) {

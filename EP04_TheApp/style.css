@@ -301,3 +301,76 @@ ul {
   line-height: 30px;
 }
 
+.link{
+  text-decoration: none;
+  color: black;
+  transition: ease-in-out 0.2s;
+}
+
+.link:visited{
+  color: none;
+}
+
+.link:hover{
+  color: none;
+  border-bottom: 1px solid black;
+}
+
+.rest-menu{
+  padding: 4% 10%;
+  gap: 2%;
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rest-menu h1{
+  width: 100%;
+  /* border: 1px solid red; */
+  font-size: 30px;
+  /* border: 1px solid blue; */
+}
+
+.rest-menu h3{
+  margin-bottom: 1%;
+  font-size: 50px;
+  margin-top: 1%;
+  /* border: 1px solid blue; */
+  width: fit-content;
+  color: orange;
+  text-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05);
+}
+
+.rest-menu-left{
+  /* border: 1px solid blue; */
+  width: 45%;
+  padding: 8px 0;
+}
+
+.rest-menu p{
+  font-size: 14px;
+  width: 100%;
+  /* border: 1px solid blue; */
+}
+
+.rest-menu-right{
+  width: 30%;
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.rest-menu-right img{
+  /* position: absolute; */
+  /* z-index: -1; */
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.388);
+  height: 200px;
+  width: 280px;
+  object-fit: cover;
+  object-position: center;
+}
+
