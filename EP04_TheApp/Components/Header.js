@@ -7,8 +7,8 @@ let liStyle = {
 
 const Header = () => {
   return (
-    <div className="header">
-      <div className="logo-ctr" onClick={() => (window.location.href = '/')}>
+    <div className="header flex items-center justify-between px-20 py-4 border-1 border-black shadow-md bg-orange-400">
+      <div className="logo-ctr cursor-pointer" onClick={() => (window.location.href = '/')}>
         <img
           width={"40px"}
           height={"40px"}
@@ -17,13 +17,7 @@ const Header = () => {
       </div>
 
       <div className="nav-bar">
-        <ul
-          style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
+        <ul className="flex items-center justify-between">
           {/* <li style={liStyle} onClick={() => (window.location.href = '/')}>Home</li>
           <li style={liStyle} onClick={() => (window.location.href = '/About')}>About</li>
           <li style={liStyle} onClick={() => (window.location.href = '/Contact')}>Contact</li>

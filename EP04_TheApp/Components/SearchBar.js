@@ -8,13 +8,14 @@ const SearchBar = ({ listOfRest, setListOfRest, filteredListOfRest, setFilteredL
   
   
   return (
-    <div className="search-bar">
+    <div className="search-bar h-16 flex items-center justify-center gap-4 bg-orange-200">
       <input value={searchVal} placeholder="Search your food here..." onChange={
         (e)=>{
           setSearchVal(e.target.value)
         }
-      }></input>
-      <button onClick={()=>{
+      } className="h-10 px-4 bg-orange-100 text-black placeholder:text-black"></input>
+
+      <button className="bg-[#252525] text-white px-6 py-[8px] rounded-sm ml-[-15px]" onClick={()=>{
         // console.log(searchVal);
         const searchedList = listOfRest.filter((res)=>
           res.card.card.info.name.toLowerCase().includes(searchVal.toLowerCase())
@@ -28,8 +29,7 @@ const SearchBar = ({ listOfRest, setListOfRest, filteredListOfRest, setFilteredL
         // })
         setFilteredListOfRest(searchedList)
         }}>Search</button>
-      <button
-        style={{ backgroundColor: "#252525", color: "white" }}
+      <button className="bg-[#252525] text-white px-6 py-[8px] rounded-sm"
         
         onClick={() => {
           let filteredList = listOfRest.filter(
@@ -41,8 +41,7 @@ const SearchBar = ({ listOfRest, setListOfRest, filteredListOfRest, setFilteredL
       >
         Top Rated Rest
       </button>
-      <button
-        style={{ backgroundColor: "#252525", color: "white" }}
+      <button className="bg-[#252525] text-white px-6 py-[8px] rounded-sm"
         onClick={() => {
           let filteredList = listOfRest.filter(
             (res) => res.card.card.info.avgRating <= 4
@@ -54,8 +53,7 @@ const SearchBar = ({ listOfRest, setListOfRest, filteredListOfRest, setFilteredL
         Low Rated Rest
       </button>
 
-      <button
-        style={{ backgroundColor: "#252525", color: "white" }}
+      <button className="bg-[#252525] text-white px-6 py-[8px] rounded-sm"
         onClick={() => {
           btnLogin ? setBtnLogin(false) : setBtnLogin(true);
         }}

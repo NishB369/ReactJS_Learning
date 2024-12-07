@@ -31,7 +31,7 @@ const RestMenuCardContainer = () => {
   };
 
   return (
-    <div>
+    <div className="flex items-center flex-wrap justify-center gap-8 px-8">
       {restMenuList.length > 0 ? (
         restMenuList.map((menuItem, index) => (
           <RestMenuCard key={index} menuItem={menuItem.card?.info} />

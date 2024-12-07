@@ -46,7 +46,7 @@ const CardContainer = ({ listOfRest, setListOfRest, filteredListOfRest, setFilte
   }
 
   return (
-    <div className="card-container">
+    <div className="card-container items-center h-full justify-center gap-8 w-[80%] flex-wrap flex">
       {filteredListOfRest.map((data, index) => (
         <Link className="card-link" to={"/RestMenu/"+data.card.card.info.id}><Card key={index} resData={data} /></Link>
       ))}
