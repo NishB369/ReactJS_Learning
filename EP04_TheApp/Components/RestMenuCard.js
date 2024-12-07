@@ -2,7 +2,7 @@ const RestMenuCard = ({ menuItem }) => {
     const {
       name = "Unnamed Item",
       imageId = "",
-      defaultPrice = 0,
+      price = 0,
       description = "No description available",
     } = menuItem || {};
   
@@ -10,7 +10,7 @@ const RestMenuCard = ({ menuItem }) => {
       <div className="rest-menu">
         <div className="rest-menu-left">
           <h1>{name}</h1>
-          <h3>{"₹" + defaultPrice / 100}</h3>
+          <h3>{"₹" + price / 100}</h3>
           <p>{description}</p>
         </div>
         <div className="rest-menu-right">

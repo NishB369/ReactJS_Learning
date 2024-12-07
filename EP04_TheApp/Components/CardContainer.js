@@ -1,6 +1,7 @@
 import Card from "./Card";
 import ShimCard from "../Shimmer Components/Card";
 import { useEffect } from "react";
+import { Link } from "react-router";
 
 const CardContainer = ({ listOfRest, setListOfRest, filteredListOfRest, setFilteredListOfRest }) => {
   useEffect(() => {
@@ -19,6 +20,8 @@ const CardContainer = ({ listOfRest, setListOfRest, filteredListOfRest, setFilte
 
     setListOfRest(json?.data?.cards.slice(3));
     setFilteredListOfRest(json?.data?.cards.slice(3))  
+    console.log(json?.data?.cards.slice(3));
+    
       
   };
 
@@ -45,7 +48,7 @@ const CardContainer = ({ listOfRest, setListOfRest, filteredListOfRest, setFilte
   return (
     <div className="card-container">
       {filteredListOfRest.map((data, index) => (
-        <Card key={index} resData={data} />
+        <Link className="card-link" to={"/RestMenu/"+data.card.card.info.id}><Card key={index} resData={data} /></Link>
       ))}
     </div>
   );

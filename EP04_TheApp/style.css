@@ -95,7 +95,7 @@ ul {
   border-radius: 8px;
   box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.525);
   transition: ease-in-out 0.4s;
-  margin-bottom: 2%;
+  margin-bottom: 12%;
 }
 
 .shim-card {
@@ -374,3 +374,8 @@ ul {
   object-position: center;
 }
 
+
+.card-link{
+  text-decoration: none;
+  color: black;
+}
